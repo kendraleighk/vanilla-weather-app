@@ -6,6 +6,7 @@ body{
 padding: 20px;
 border: 1px solid #DADDE1;
 border-radius: 5px;
+background-image: linear-gradient(to top, #dfe9f3 0%, white 100%);
 }
 
 .weather-app-wrapper {
@@ -32,7 +33,7 @@ border-radius: 5px;
 
 .weather-temperature .units {
     position: relative;
-    font-size: 16px;
+    font-size: 20px;
     top: -34px;
 }
 
@@ -68,17 +69,18 @@ li:first-letter {
 }
 
 .weather-forecast {
-    margin-top:10px;
+    margin-top:15px;
 }
 
 .weather-forecast h3{
     color:rgb(186, 186, 186);
-    font-size: 14px;
+    font-size: 10px;
     font-weight: 400;
     text-align: center;
     height:15px;
     line-height:15px;
     padding-top:7px;
+    letter-spacing:1px;
 }
 
 .weather-forecast img {
@@ -86,14 +88,16 @@ li:first-letter {
     margin:0 auto;
     height:48px;
     width:48px;
+    letter-spacing:1px;
 }
 
 .weather-forecast-temperature {
     text-align:center;
     color: rgb(135, 135, 135);
-    font-size:13px;
+    font-size:10px;
     font-weight:400;
     height:auto;
     line-height:15px;
     white-space:nowrap;
+    letter-spacing: 1px;
 }
