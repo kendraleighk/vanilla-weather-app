@@ -64,6 +64,7 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
   let forecast = response.data.list[0];
   forecastElement.innerHTML = null;
+  let fahrenheitTemperature = null;
   
 
   for (let index = 0; index < 6; index++) {
@@ -104,9 +105,9 @@ function displayCelsiusTemperature(event) {
   event.preventDefault();
   let temperatureElement = document.querySelector("#temperature");
   fahrenheitLink.classList.remove("active");
-  celsiusLink.classLink.add("active");
-  let celsiusTemperature = ((fahrenheitTemperature - 32) * 5 ) / 9 ;
-  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+  celsiusLink.classList.add("active");
+   let celsiusTemperature = ((fahrenheitTemperature - 32) * 5 ) / 9 ; 
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
 }
 
 function displayFahrenheitTemperature(event) {
@@ -117,7 +118,6 @@ function displayFahrenheitTemperature(event) {
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
-let fahrenheitTemperature = null;
 
 let form = document.querySelector("#search-form");
 form.addEventListener("submit", handleSubmit);
